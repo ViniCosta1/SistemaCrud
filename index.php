@@ -41,7 +41,7 @@ include_once "includes/header.php";
 
         <!-- Notícia 1 -->
         <div class="col-6 col-sm-4 col-md-4 mb-4 mb-sm-0 mb-md-0">
-            <h3>Título da notícia</h3>
+            <h3 class="pt-2">Título da notícia</h3>
             <div class="dropdown-divider"></div>
             <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate error aspernatur, at molestias eligendi necessitatibus ullam ratione reiciendis distinctio repudiandae, illum quisquam doloribus. Sint unde praesentium reprehenderit cupiditate doloremque.</p>
             <div class="container p-0">
@@ -61,7 +61,7 @@ include_once "includes/header.php";
 
         <!-- Notícia 2 -->
         <div class="col-6 col-sm-4 col-md-4">
-            <h3>Título da notícia</h3>
+            <h3 class="pt-2">Título da notícia</h3>
             <div class="dropdown-divider"></div>
             <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate error aspernatur, at molestias eligendi necessitatibus ullam ratione reiciendis distinctio repudiandae, illum quisquam doloribus. Sint unde praesentium reprehenderit cupiditate doloremque.</p>
             <div class="container p-0">
@@ -81,7 +81,7 @@ include_once "includes/header.php";
 
         <!-- Notícia 3 -->
         <div class="col-6 col-sm-4 col-md-4">
-            <h3>Título da notícia</h3>
+            <h3 class="pt-2">Título da notícia</h3>
             <div class="dropdown-divider"></div>
             <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate error aspernatur, at molestias eligendi necessitatibus ullam ratione reiciendis distinctio repudiandae, illum quisquam doloribus. Sint unde praesentium reprehenderit cupiditate doloremque.</p>
             <div class="container p-0">
