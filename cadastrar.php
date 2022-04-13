@@ -42,10 +42,20 @@ include_once "includes/header.php";
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12">
             <form method="post" action="">
-                Título da Notícia: <input class="form-control mt-2" type="text" name="titulo">
-                Categorias: <input class="form-control mt-2" type="text" name="categorias">
-                Texto: <input class="form-control mt-2" type="text" name="texto" height="200px">
-                Imagens: <input type="file" class="mt-2" name="img">
+                Título da Notícia: <input class="form-control mb-3" type="text" name="titulo">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control mb-3" id="exampleFormControlSelect1">
+                    <option>Escolher:</option>
+                    <option>Política</option>
+                    <option>Entreterimento</option>
+                    <option>Polêmica</option>
+                    <option>Ao Redor do Mundo</option>
+                    <option>Outros</option>
+                </select>
+                <label for="exampleFormControlTextarea1">Texto:</label>
+                <textarea class="form-control mb-3" id="textarea1" rows="4"></textarea>
+                Imagens: <input type="file" class="mb-3" name="img"> <br>
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
             </form>
         </div>
     </div>
