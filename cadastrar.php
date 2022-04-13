@@ -44,6 +44,9 @@ include_once "includes/header.php";
             <form method="post" action="">
                 Título da Notícia: <input class="form-control mb-3" type="text" name="titulo">
                 Autor: <input type="text" class="form-control mb-3" name="img">
+
+                <!-- Depois, criar uma tabela no banco ("categorias") e colocar essas opções nessa tabela, com a 
+                função de poder colocar mais opções-->
                 <label for="exampleFormControlSelect1">Categorias</label>
                 <select class="form-control mb-3" id="exampleFormControlSelect1" name="opcao">
                     <option>Escolher:</option>
