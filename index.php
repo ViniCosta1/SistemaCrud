@@ -13,10 +13,13 @@ include_once "includes/header.php";
                 <div id="my-nav" class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cadastrar</a>
+                            <a class="nav-link" href="cadastrar.php" tabindex="-1" aria-disabled="true">Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Editar</a>
                         </li>
                     </ul>
                 </div>
