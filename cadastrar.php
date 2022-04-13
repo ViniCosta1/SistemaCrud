@@ -31,8 +31,8 @@ include_once "includes/header.php";
 <div class="jumbotron bg-transparent">
     <div class="row">
         <div class="col-12 text-center mt-3">
-            <h1 class="title pb-0">Notícias da Semana!</h1>
-            <div class="dropdown-divider"></div>
+            <h1 class="title pb-0">Cadastrar Notícia</h1>
+            <div class="dropdown-divider mb-0"></div>
         </div>
     </div>
 </div>
@@ -43,9 +43,10 @@ include_once "includes/header.php";
         <div class="col-12 col-sm-12 col-md-12">
             <form method="post" action="">
                 Título da Notícia: <input class="form-control mb-3" type="text" name="titulo">
+                Autor: <input type="text" class="form-control mb-3" name="img">
                 <label for="exampleFormControlSelect1">Example select</label>
                 <select class="form-control mb-3" id="exampleFormControlSelect1">
-                    <option>Escolher:</option>
+                    <option selected>Escolher:</option>
                     <option>Política</option>
                     <option>Entreterimento</option>
                     <option>Polêmica</option>
