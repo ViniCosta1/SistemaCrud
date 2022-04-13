@@ -44,9 +44,9 @@ include_once "includes/header.php";
             <form method="post" action="">
                 Título da Notícia: <input class="form-control mb-3" type="text" name="titulo">
                 Autor: <input type="text" class="form-control mb-3" name="img">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control mb-3" id="exampleFormControlSelect1">
-                    <option selected>Escolher:</option>
+                <label for="exampleFormControlSelect1">Categorias</label>
+                <select class="form-control mb-3" id="exampleFormControlSelect1" name="opcao">
+                    <option>Escolher:</option>
                     <option>Política</option>
                     <option>Entreterimento</option>
                     <option>Polêmica</option>
@@ -55,8 +55,8 @@ include_once "includes/header.php";
                 </select>
                 <label for="exampleFormControlTextarea1">Texto:</label>
                 <textarea class="form-control mb-3" id="textarea1" rows="4"></textarea>
-                Imagens: <input type="file" class="mb-3" name="img"> <br>
-                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                Imagens: <input type="file" class="mb-3" name="img" accept="image/*"> <br>
+                <button class="btn btn-primary" type="submit" name="enviar">Cadastrar</button>
             </form>
         </div>
     </div>
