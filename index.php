@@ -31,13 +31,11 @@ include_once "includes/header.php";
 <div class="jumbotron bg-transparent">
     <div class="row">
         <div class="col-12 text-center mt-3">
-            <h1 class="title">Notícias da Semana!</h1>
+            <h1 class="title pb-0">Cadastrar Notícia</h1>
+            <div class="dropdown-divider mb-0"></div>
         </div>
     </div>
 </div>
-
-
-<div class="dropdown-divider"></div>
 
 <div class="container cssColor cssBorder">
     <div class="row mt-3 text-center cssBorder shadow">
