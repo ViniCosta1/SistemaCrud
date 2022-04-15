@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "includes/header.php";
 ?>
 
@@ -31,6 +32,12 @@ include_once "includes/header.php";
 <div class="jumbotron bg-transparent">
     <div class="row">
         <div class="col-12 text-center mt-3">
+            <?php
+            if (isset($_SESSION['mensagem'])) :
+                echo $_SESSION['mensagem'];
+            endif;
+            session_unset();
+            ?>
             <h1 class="title pb-0">Cadastrar Notícia</h1>
             <div class="dropdown-divider mb-0"></div>
         </div>

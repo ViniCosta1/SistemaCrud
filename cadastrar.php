@@ -1,6 +1,6 @@
 <?php
+session_start();
 include_once "includes/header.php";
-include_once "db_connect.php";
 ?>
 
 <div class="container">
@@ -42,9 +42,9 @@ include_once "db_connect.php";
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12">
-            <form method="post" action="">
-                Título da Notícia: <input class="form-control mb-3" type="text" name="titulo">
-                Autor: <input type="text" class="form-control mb-3" name="img">
+            <form method="post" action="php-actions/createNews.php">
+                Título da Notícia: <input class="form-control mb-3" type="text" name="titulo" required>
+                Autor: <input type="text" class="form-control mb-3" name="autor" required>
 
                 <!-- Depois, criar uma tabela no banco ("categorias") e colocar essas opções nessa tabela, com a 
                 função de poder colocar mais opções-->
@@ -58,10 +58,18 @@ include_once "db_connect.php";
                     <option>Outros</option>
                 </select>
                 <label for="exampleFormControlTextarea1">Texto:</label>
-                <textarea class="form-control mb-3" id="textarea1" rows="4"></textarea>
+                <textarea class="form-control mb-3" id="textarea1" rows="4" name="text" required></textarea>
                 Imagens: <input type="file" class="mb-3" name="img" accept="image/*"> <br>
                 <button class="btn btn-primary" type="submit" name="enviar">Cadastrar</button>
             </form>
+
+            <?php
+                if (isset($_SESSION['categoria'])):
+                    echo $_SESSION['categoria'];
+                endif;
+                session_unset();
+            ?>
+            
         </div>
     </div>
 </div>

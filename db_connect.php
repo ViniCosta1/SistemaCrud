@@ -1,8 +1,9 @@
 <?php
-$servername = "sql103.epizy.com";
-$usename = "epiz_31509991";
-$password = "tipGWwG88g34m5h";
-$db_name = "epiz_31509991_noticias";
+// * Nota: Essa conexão funciona para o XAMPP, mas os arquivos do site já estão alterados
+$servername = "localhost";
+$usename = "root";
+$password = "";
+$db_name = "SiteNoticias";
 
 // * Conexão
 $connect = mysqli_connect($servername, $usename, $password, $db_name);
