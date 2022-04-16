@@ -58,7 +58,7 @@ include_once "includes/header.php";
                     <option>Outros</option>
                 </select>
                 <label for="exampleFormControlTextarea1">Texto:</label>
-                <textarea class="form-control mb-3" id="textarea1" rows="4" name="text" required></textarea>
+                <textarea class="form-control mb-3" id="textarea1" rows="4" name="texto" required></textarea>
                 Imagens: <input type="file" class="mb-3" name="img" accept="image/*"> <br>
                 <button class="btn btn-primary" type="submit" name="enviar">Cadastrar</button>
             </form>

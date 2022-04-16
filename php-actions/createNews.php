@@ -6,12 +6,12 @@ if (isset($_POST['enviar'])):
     $titulo = $_POST['titulo'];
     $autor = $_POST['autor'];
     $categoria = $_POST['opcao'];
-    $texto = $_POST['text'];
+    $texto = $_POST['texto'];
 
     if ($categoria != "Escolher:"):
         
 
-        $sql = "INSERT INTO noticia (titulo, categoria, autor) VALUES ('$titulo', '$categoria', '$autor')";
+        $sql = "INSERT INTO noticia (titulo, categoria, autor, texto) VALUES ('$titulo', '$categoria', '$autor', '$texto')";
     
         if(mysqli_query($connect, $sql)):
             $_SESSION['mensagem'] = "Cadastrado com sucesso!";

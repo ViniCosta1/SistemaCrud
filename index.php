@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once "db_connect.php";
 include_once "includes/header.php";
 ?>
 
@@ -50,6 +51,8 @@ include_once "includes/header.php";
         <!-- Notícia 1 -->
         <div class="col-12 col-sm-6 col-md-4 mb-4 mb-sm-0 mb-md-0">
             <h3 class="pt-2">Título da notícia</h3>
+            <h5 class = "text-left">Categoria: </h5>
+            <h5 class = "text-left">Autor: </h5>
             <div class="dropdown-divider"></div>
             <div class="col-12">
                 <img class="img-fluid" src="img/sem_foto.png" alt="SemFoto" height="150">
@@ -70,6 +73,8 @@ include_once "includes/header.php";
         <!-- Notícia 2 -->
         <div class="col-12 col-sm-6 col-md-4 mb-4 mb-sm-0 mb-md-0">
             <h3 class="pt-2">Título da notícia</h3>
+            <h5 class = "text-left">Categoria: </h5>
+            <h5 class = "text-left">Autor: </h5>
             <div class="dropdown-divider"></div>
             <div class="col-12">
                 <img class="img-fluid" src="img/sem_foto.png" alt="SemFoto" height="150">
@@ -90,6 +95,8 @@ include_once "includes/header.php";
         <!-- Notícia 3 -->
         <div class="col-12 col-sm-6 col-md-4 mb-4 mb-sm-0 mb-md-0">
             <h3 class="pt-2">Título da notícia</h3>
+            <h5 class = "text-left">Categoria: </h5>
+            <h5 class = "text-left">Autor: </h5>
             <div class="dropdown-divider"></div>
             <div class="col-12">
                 <img class="img-fluid" src="img/sem_foto.png" alt="SemFoto" height="150">
@@ -101,12 +108,48 @@ include_once "includes/header.php";
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores obcaecati harum tenetur quod, facilis facere in nisi amet eius perspiciatis? Sunt beatae quasi sint optio repudiandae facere est atque.</p>
                     </div>
                     <div class="col-12 text-center">
-                        <button class="btn btn-primary mb-2" type="button">Ver Mais</button>
+                        <button class="btn btn-primary mb-4" type="button">Ver Mais</button>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Notícia 4 -->
+        <?php
+        $sql = "SELECT * FROM noticia";
+        $resultado = mysqli_query($connect, $sql);
+
+        while ($dados = mysqli_fetch_array($resultado)):
+        ?>
+        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-sm-0 mb-md-0">
+            <h3 class="pt-2">
+                <?php echo $dados['titulo'];?>
+            </h3>
+
+            <h5 class = "text-left"><?php echo $dados['categoria'];?></h5>
+            <h5 class = "text-left"><?php echo $dados['autor'];?></h5>
+
+            <div class="dropdown-divider"></div>
+            <div class="col-12">
+                <img class="img-fluid" src="img/sem_foto.png" alt="SemFoto" height="150">
+            </div>
+            <p class="text-justify">
+                <?php
+                echo $dados['texto'];
+                ?>
+            </p>
+            <div class="container p-0">
+                <div class="row text-justify">
+                    <div class="col-12 mt-3">
+                        <p><?php echo $dados['texto'];?></p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary mb-4" type="button">Ver Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endwhile;?>
     </div>
 </div>
 </div>
