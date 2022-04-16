@@ -39,7 +39,7 @@ include_once "includes/header.php";
             endif;
             session_unset();
             ?>
-            <h1 class="title pb-0">Cadastrar Notícia</h1>
+            <h1 class="title pb-0">Notícias</h1>
             <div class="dropdown-divider mb-0"></div>
         </div>
     </div>
@@ -48,73 +48,7 @@ include_once "includes/header.php";
 <div class="container cssColor cssBorder">
     <div class="row mt-3 text-center cssBorder shadow">
 
-        <!-- Notícia 1 -->
-        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-sm-0 mb-md-0">
-            <h3 class="pt-2">Título da notícia</h3>
-            <h5 class = "text-left">Categoria: </h5>
-            <h5 class = "text-left">Autor: </h5>
-            <div class="dropdown-divider"></div>
-            <div class="col-12">
-                <img class="img-fluid" src="img/sem_foto.png" alt="SemFoto" height="150">
-            </div>
-            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate error aspernatur, at molestias eligendi necessitatibus ullam ratione reiciendis distinctio repudiandae, illum quisquam doloribus. Sint unde praesentium reprehenderit cupiditate doloremque.</p>
-            <div class="container p-0">
-                <div class="row text-justify">
-                    <div class="col-12 mt-3">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores obcaecati harum tenetur quod, facilis facere in nisi amet eius perspiciatis? Sunt beatae quasi sint optio repudiandae facere est atque.</p>
-                    </div>
-                    <div class="col-12 text-center">
-                        <button class="btn btn-primary mb-2" type="button">Ver Mais</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Notícia 2 -->
-        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-sm-0 mb-md-0">
-            <h3 class="pt-2">Título da notícia</h3>
-            <h5 class = "text-left">Categoria: </h5>
-            <h5 class = "text-left">Autor: </h5>
-            <div class="dropdown-divider"></div>
-            <div class="col-12">
-                <img class="img-fluid" src="img/sem_foto.png" alt="SemFoto" height="150">
-            </div>
-            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate error aspernatur, at molestias eligendi necessitatibus ullam ratione reiciendis distinctio repudiandae, illum quisquam doloribus. Sint unde praesentium reprehenderit cupiditate doloremque.</p>
-            <div class="container p-0">
-                <div class="row text-justify">
-                    <div class="col-12 mt-3">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores obcaecati harum tenetur quod, facilis facere in nisi amet eius perspiciatis? Sunt beatae quasi sint optio repudiandae facere est atque.</p>
-                    </div>
-                    <div class="col-12 text-center">
-                        <button class="btn btn-primary mb-2" type="button">Ver Mais</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Notícia 3 -->
-        <div class="col-12 col-sm-6 col-md-4 mb-4 mb-sm-0 mb-md-0">
-            <h3 class="pt-2">Título da notícia</h3>
-            <h5 class = "text-left">Categoria: </h5>
-            <h5 class = "text-left">Autor: </h5>
-            <div class="dropdown-divider"></div>
-            <div class="col-12">
-                <img class="img-fluid" src="img/sem_foto.png" alt="SemFoto" height="150">
-            </div>
-            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate error aspernatur, at molestias eligendi necessitatibus ullam ratione reiciendis distinctio repudiandae, illum quisquam doloribus. Sint unde praesentium reprehenderit cupiditate doloremque.</p>
-            <div class="container p-0">
-                <div class="row text-justify">
-                    <div class="col-12 mt-3">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores obcaecati harum tenetur quod, facilis facere in nisi amet eius perspiciatis? Sunt beatae quasi sint optio repudiandae facere est atque.</p>
-                    </div>
-                    <div class="col-12 text-center">
-                        <button class="btn btn-primary mb-4" type="button">Ver Mais</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Notícia 4 -->
+        <!-- Notícias -->
         <?php
         $sql = "SELECT * FROM noticia";
         $resultado = mysqli_query($connect, $sql);
