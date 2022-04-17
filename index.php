@@ -20,9 +20,6 @@ include_once "includes/header.php";
                         <li class="nav-item">
                             <a class="nav-link" href="cadastrar.php" tabindex="-1" aria-disabled="true">Cadastrar</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Editar</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
@@ -67,18 +64,13 @@ include_once "includes/header.php";
             <div class="col-12">
                 <img class="img-fluid" src="img/sem_foto.png" alt="SemFoto" height="150">
             </div>
-            <p class="text-justify">
-                <?php
-                echo $dados['texto'];
-                ?>
-            </p>
             <div class="container p-0">
                 <div class="row text-justify">
                     <div class="col-12 mt-3">
                         <p><?php echo $dados['texto'];?></p>
                     </div>
                     <div class="col-12 text-center">
-                        <button class="btn btn-primary mb-4" type="button">Ver Mais</button>
+                        <a href="editar.php?id=<?php echo $dados['id'];?>"class="btn btn-primary mb-4" type="button">Editar Notícia</a>
                     </div>
                 </div>
             </div>
