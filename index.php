@@ -71,6 +71,7 @@ include_once "includes/header.php";
                     </div>
                     <div class="col-12 text-center">
                         <a href="editar.php?id=<?php echo $dados['id'];?>"class="btn btn-primary mb-4" type="button">Editar Notícia</a>
+                        <a href="php-actions/delete.php?id=<?php echo $dados['id'];?>"class="btn btn-danger mb-4" type="button">Deletar Notícia</a>
                     </div>
                 </div>
             </div>
